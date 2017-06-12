@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <hello></hello>
+    <hello :profile="profile"></hello>
     <div class="container">
         <div class="row justify-content-center">
           <div class="col-2" v-if="!authorized">
@@ -57,6 +57,9 @@ export default {
         vm.authorized = true
         vm.getProfile()
       } else if (response.status === 'not_authorized') {
+        vm.authorized = false
+      } else if (response.status === 'unknown') {
+        vm.profile = {}
         vm.authorized = false
       } else {
         vm.authorized = false
