@@ -1,6 +1,8 @@
 # simple-facebook-login
 
-> A Vue.js project
+This repository is forked from [vue-simple-facebook-login](https://github.com/Sellsuki/vue-simple-facebook-login) @ [Sellsuki](https://github.com/Sellsuki)
+
+To read the explanation of the code, you can check my blog [PJCHENder 那些沒告訴你的小細節](https://pjchender.blogspot.tw/2017/06/vue-vue-facebook-login.html).
 
 ## Build Setup
 
